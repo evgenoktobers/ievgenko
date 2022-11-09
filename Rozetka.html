@@ -256,43 +256,7 @@
         <!--            xhttp.open('GET', 'https://' + window.location.hostname + '/chat_config/', true);-->
 
         <!--            xhttp.onload = function () {-->
-        <!--                try {-->
-        <!--                    var responseText = JSON.parse(xhttp.responseText);-->
-        <!--                    var chatLimit = responseText.data[0].attributes.chat_limit;-->
-        <!--                    var isChatEnabled = incomingChats <= chatLimit;-->
-        <!--                    if (isChatEnabled) {-->
-        <!--                        suppressChat(!isChatEnabled);-->
-        <!--                        showWidget();-->
-        <!--                    } else {-->
-        <!--                        suppressChat(true);-->
-        <!--                        showWidget();-->
-        <!--                    }-->
-        <!--                } catch (e) {-->
-        <!--                    suppressChat(true);-->
-        <!--                    showWidget();-->
-        <!--                }-->
-        <!--            };-->
-
-        <!--            xhttp.onerror = function () {-->
-        <!--                suppressChat(true);-->
-        <!--                showWidget();-->
-        <!--            };-->
-
-        <!--            xhttp.send();-->
-        <!--        }-->
-
-        <!--        function suppressChat (isSuppress) {-->
-        <!--            zE('webWidget', 'updateSettings', {-->
-        <!--                webWidget: {-->
-        <!--                    chat: {-->
-        <!--                        suppress: isSuppress,-->
-        <!--                    }-->
-        <!--                }-->
-        <!--            });-->
-        <!--        }-->
-
-        <!--        function showWidget () {-->
-        <!--            zE(function () {-->
+      
         <!--                zE.show();-->
         <!--                zE('webWidget', 'open');-->
         <!--            });-->
